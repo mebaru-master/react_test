@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 }
+
+/* Netflix風トップ画面用スタイル */
+.netflix-bg {
+  background: linear-gradient(to top, #111 60%, rgba(0,0,0,0.7)), url('https://assets.nflxext.com/ffe/siteui/vlv3/6e2e1c2e-2e7e-4e2e-8e2e-2e7e4e2e8e2e/6e2e1c2e-2e7e-4e2e-8e2e-2e7e4e2e8e2e_JP-ja-20230619-popsignuptwoweeks-perspective_alpha_website_large.jpg') center/cover no-repeat;
+  min-height: 100vh;
+}
+
+.Netflix-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #fff;
+  padding: 0 0 0 40px;
+  background: rgba(0,0,0,0.4);
+}
+
+.Netflix-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30px 0 0 0;
+}
+.Netflix-logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e50914;
+  letter-spacing: 2px;
+  margin-right: 40px;
+}
+.Netflix-menu {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+.Netflix-hero {
+  margin-top: 120px;
+  max-width: 600px;
+}
+.Netflix-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.Netflix-desc {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.Netflix-buttons {
+  display: flex;
+  gap: 16px;
+}
+.Netflix-btn {
+  font-size: 1.1rem;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.Netflix-btn.play {
+  background: #fff;
+  color: #111;
+}
+.Netflix-btn.info {
+  background: rgba(109,109,110,0.7);
+  color: #fff;
+}
+.Netflix-btn.play:hover {
+  background: #e6e6e6;
+}
+.Netflix-btn.info:hover {
+  background: #333;
+}
